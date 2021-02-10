@@ -221,6 +221,10 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     'import/order': ['error', { groups: ['builtin', 'external'] }],
 
+    // Ensures that there is no resolvable path back to this module via its dependencies.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md
+    'import/no-cycle': ['error'],
+
     /**
      * a11ty
      */
