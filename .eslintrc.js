@@ -201,6 +201,10 @@ module.exports = {
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': ['error', 'never', { always: [] }],
+    
+    // Components without children can be self-closed to avoid unnecessary extra closing tag.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/97a9f397d2a8a3ce3b2af893bdbb86bb2c1d4480/docs/rules/self-closing-comp.md
+    'react/self-closing-comp': ['error', { component: true }],
 
     /**
      * Import
